@@ -1,0 +1,46 @@
+app_name = MusicStreamer
+version = 1.0
+
+default_settings = {
+    theme = dark
+    autoplay = true
+    volume = 70
+    language = en
+}
+
+user_preferences = {
+    user_id = 123456789
+    settings = {
+        theme = light
+        autoplay = false
+        volume = 80
+        language = fr
+    }
+}
+
+supported_languages = { en fr es de }
+supported_themes = { light dark }
+
+logging_settings = {
+    log_level = info
+    log_file = /var/log/musicstreamer.log
+    log_rotation = daily
+}
+
+payment_settings = {
+    payment_gateway = paypal
+    currency = USD
+    tax_rate = 0.05
+}
+
+server_settings = {
+    port = 8080
+    max_connections = 1000
+    timeout = 60
+}
+
+database_settings = {
+    database_url = mysql://user:password@localhost/musicstreamer
+    max_pool_size = 50
+    connection_timeout = 30
+}
